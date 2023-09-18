@@ -4,7 +4,25 @@
 
     <?php
 
+/*
     require "database/config.php";
+*/
+
+
+    $host = "webpagewithdbserver.mysql.database.azure.com";
+    $username = "webpagewithdbuser";
+    $password = "7724UHS815T02I57$";
+    $db_name = "crud_db";
+    
+    // Crear una conexión a la base de datos
+    $conn = new mysqli($host, $username, $password, $db_name);
+    
+    // Verificar si la conexión es exitosa
+    if ($conn->connect_error) {
+        die("Error al conectar a la base de datos: " . $conn->connect_error);
+    } else {
+        echo "Conexión exitosa a la base de datos";
+    }
 
 
     //Establish the connection
