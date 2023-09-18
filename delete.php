@@ -9,8 +9,8 @@
         require "database/config.php";
         //Establish the connection
         $conn = mysqli_init();
-        mysqli_ssl_set($conn,NULL,NULL,$sslcert,NULL,NULL);
-        if(!mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306, MYSQLI_CLIENT_SSL)){
+        mysqli_ssl_set($conn,NULL,NULL,NULL,NULL);
+        if(!mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306)){
             die('Failed to connect to MySQL: '.mysqli_connect_error());
         }
 
