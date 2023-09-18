@@ -5,5 +5,5 @@
 $host       = getenv('webpagewithdbserver.mysql.database.azure.com');
 $username   = getenv('webpagewithdbuser');
 $password   = getenv('7724UHS815T02I57$');
-$db_name     = getenv('DB_DATABASE');
+$db_name     = getenv('crud_db');
 $sslcert    = "ssl/DigiCertGlobalRootCA.crt.pem";
