@@ -25,12 +25,13 @@
         } else {
             echo "Conexión exitosa a la base de datos";
         }
-        
+        /*
         $conn = mysqli_init();
         mysqli_ssl_set($conn,NULL,NULL,NULL,NULL);
         if(!mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306)){
             die('Failed to connect to MySQL: '.mysqli_connect_error());
         }
+        */
 
         //Test if table exists
         $res = mysqli_query($conn, "SHOW TABLES LIKE 'Products'");
